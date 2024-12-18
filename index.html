@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Registration Form</h2>
+        <form id="Validation Form">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" required>
+                <small class="text-danger" id="nameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" class="form-control" id="email" required>
+                <small class="text-danger" id="emailError"></small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone" required>
+                <small class="text-danger" id="phoneError"></small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <small class="text-danger" id="passwordError"></small>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+                <small class="text-danger" id="confirmPasswordError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
